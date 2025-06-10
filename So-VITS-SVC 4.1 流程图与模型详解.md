@@ -110,7 +110,7 @@ graph TD
 ### 4.2. 解码器 (NSF-HiFiGAN) 内部流程图
 
 ```mermaid
-graph TD
+graph LR
     A[潜在变量 z] --> B(初始卷积层);
     C[音高 f0] --> D{"神经源模块<br>(SineGen)"};
     D --> E["源激励信号<br>(谐波+噪声)"];
