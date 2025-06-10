@@ -20,11 +20,8 @@ graph TD
       B --> E[音量 vol];
     end
 
-    subgraph "VITS 核心合成模块 (SynthesizerTrn)"
-        F{"模型合成"};
-    end
-
-    C & D & E --> F;
+    C & D & E --> F["VITS 核心合成<br>(SynthesizerTrn)"];
+    
     F --> G[目标音色音频 .wav];
 ```
 
@@ -50,7 +47,7 @@ graph TD
 
     B --> C["内容编码器 <br> (Hubert/ContentVec等)"];
     C --> E[内容向量 c];
-    D --> G[音高 f0 & UV标志];
+    D --> G["音高 f0 & UV标志"];
     F --> H[音量 vol];
 ```
 
@@ -117,7 +114,7 @@ graph TD
 graph TD
     A[潜在变量 z] --> B(初始卷积层);
     C[音高 f0] --> D{"神经源模块<br>(SineGen)"};
-    D --> E[源激励信号<br>(谐波+噪声)];
+    D --> E["源激励信号<br>(谐波+噪声)"];
     
     B --> U1(上采样层 1);
     E --> N1(噪声卷积 1);
@@ -129,7 +126,7 @@ graph TD
     N2 --> U2;
     U2 --> R2(残差模块 2);
 
-    R2 --> UX(...更多层...);
+    R2 --> UX("...更多层...");
     UX --> P(最终卷积层);
     P --> Q[输出音频波形];
 ```
