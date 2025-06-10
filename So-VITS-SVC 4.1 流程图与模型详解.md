@@ -42,7 +42,7 @@ graph TD
 ```mermaid
 graph TD
     A[原始音频 .wav] --> B[重采样至 16kHz];
-    A --> D["F0 提取器 <br> (Crepe/rmvpe等)"];
+    A --> D["F0 提取器 <br> (pm/rmvpe等)"];
     A --> F["音量提取器 <br> (RMS)"];
 
     B --> C["内容编码器 <br> (Hubert/ContentVec等)"];
