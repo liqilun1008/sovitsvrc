@@ -15,7 +15,7 @@
 ### 2.1. PM 工作流程图
 
 ```mermaid
-graph TD
+graph LR
     A[输入音频 .wav] --> B{"频谱分析 (STFT)"};
     B --> C[声学特征<br>频谱图];
     C --> D{F0 候选提取};
@@ -52,7 +52,7 @@ graph TD
 ### 3.1. RMVPE 工作流程图
 
 ```mermaid
-graph TD
+graph LR
     A[输入音频 .wav] --> B{"预处理"};
     B --> C["送入预训练的<br>深度神经网络 (ResNet-based)"];
     C --> D["输出：音高概率图<br>(Pitch Probability Map / Centrogram)"];
