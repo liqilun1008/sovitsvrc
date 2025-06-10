@@ -85,8 +85,8 @@ graph TD
         L(Normalizing Flows);
 
         A & C --> D;
-        D --> L;
-        L --> G;
+        D --> P;
+        P --> G;
         H --> E;
         E -- "编码真实的z" --> G;
         D -.->|"KL散度损失(训练时)"| E;
