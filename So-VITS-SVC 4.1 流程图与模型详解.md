@@ -47,7 +47,7 @@ graph TD
 
     B --> C["内容编码器 <br> (Hubert/ContentVec等)"];
     C --> E[内容向量 c];
-    D --> G["音高 f0 & UV标志"];
+    D --> G["音高 f0 和 UV标志"];
     F --> H[音量 vol];
 ```
 
