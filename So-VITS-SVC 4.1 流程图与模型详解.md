@@ -76,7 +76,7 @@ graph TD
         C[目标说话人嵌入 g];
     end
     
-    subgraph "SynthesizerTrn 内部 (VAE 结构)  "
+    subgraph "SynthesizerTrn 内部"
         D(先验编码器);
         E(后验编码器);
         F("解码器<br>NSF-HiFiGAN");
