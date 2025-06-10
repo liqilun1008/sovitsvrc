@@ -82,7 +82,7 @@ graph TD
         F("解码器<br>NSF-HiFiGAN");
         G[潜在变量 z];
         H["(训练时)<br>真实目标音频频谱"];
-        I[Normalizing Flows]
+        I(Normalizing Flows);
 
         A & C --> D;
         D --> I;
