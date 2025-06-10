@@ -17,8 +17,8 @@ graph TD
     A[原始音频 .wav] --> B{特征提取模块};
     
     subgraph 特征提取模块
-        B --> C[内容编码器<br>(Hubert/ContentVec...)];
-        B --> D[音高提取器<br>(Crepe/Rmvpe...)];
+        B --> C[内容编码器<br>(Hubert/ContentVec等)];
+        B --> D[音高提取器<br>(Crepe/Rmvpe等)];
         B --> E[音量提取器<br>(RMS)];
     end
 
