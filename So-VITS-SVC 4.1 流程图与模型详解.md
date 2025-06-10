@@ -144,7 +144,7 @@ graph LR
 
 ```mermaid
 graph TD
-    subgraph "生成器 G (即 SynthesizerTrn)"
+    subgraph "生成器 SynthesizerTrn"
         A[输入特征] --> B(Generator);
         B --> C[生成音频 y_hat];
     end
