@@ -27,13 +27,13 @@ graph TD
     E --> H[音量 vol];
 
     subgraph "流程一 (默认/高效)"
-        I[SynthesizerTrn (VITS 核心)];
+        I["SynthesizerTrn (VITS 核心)"];
         I --> J[输出音频 .wav];
     end
 
     subgraph "流程二 (可选/高质量)"
-        K[Unit2Mel (扩散模型)];
-        L[独立声码器 (HiFi-GAN)];
+        K["Unit2Mel (扩散模型)"];
+        L["独立声码器 (HiFi-GAN)"];
         K --> L;
         L --> M[输出音频 .wav];
     end
@@ -63,7 +63,7 @@ graph TD
     subgraph "SynthesizerTrn 内部"
         D(先验编码器);
         E(后验编码器);
-        F(解码器 - NSF-HiFiGAN);
+        F("解码器 - NSF-HiFiGAN");
         G[潜在变量 z];
 
         A & C --> D;
@@ -82,7 +82,7 @@ graph TD
     subgraph "对抗训练 (GAN)"
         I[生成音频 y_hat];
         J[真实音频 y];
-        K(多周期判别器);
+        K("多周期判别器");
         
         F --> I;
         I --> K;
@@ -159,7 +159,7 @@ graph TD
     
     subgraph "输出"
         F[梅尔频谱图];
-        G[独立声码器<br>(HiFi-GAN)];
+        G["独立声码器<br>(HiFi-GAN)"];
         H[最终输出 .wav];
         
         E --> F;
