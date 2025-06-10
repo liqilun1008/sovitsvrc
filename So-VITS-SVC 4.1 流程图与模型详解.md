@@ -82,10 +82,11 @@ graph TD
         F("解码器<br>NSF-HiFiGAN");
         G[潜在变量 z];
         H["(训练时)<br>真实目标音频频谱"];
+        I[Normalizing Flows]
 
         A & C --> D;
-        D -- "预测z的分布 P(z|c)" --> G;
-        
+        D --> I;
+        I --> G;
         H --> E;
         E -- "编码真实的z" --> G;
         D -.->|"KL散度损失(训练时)"| E;
