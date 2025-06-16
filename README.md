@@ -104,12 +104,12 @@ graph TD
 
 ```mermaid
 flowchart TD
-    A[Reference Audios(Audio 1, 2, 3)] --> B1[Content Encoder(z)]
-    A --> B2[Speaker Encoder<br/>(s)]
-    B1 --> C[vCLUB Estimator<br/>✂ Minimize I(z, s)]
+    A[Reference Audios\n(Audio 1, 2, 3)] --> B1[Content Encoder\n(z)]
+    A --> B2[Speaker Encoder\n(s)]
+    B1 --> C[vCLUB Estimator\n✂ Minimize I(z, s)]
     B2 --> C
-    C --> D1[Before: z ≈ s<br/>(Overlapping)]
-    C --> D2[After: z ⊥ s<br/>(Disentangled)]
+    C --> D1[Before: z ≈ s\n(Overlapping)]
+    C --> D2[After: z ⊥ s\n(Disentangled)]
 
     style A fill:#BFDFFF,stroke:#333,stroke-width:1px
     style B1 fill:#FFE4B5,stroke:#333
@@ -117,6 +117,7 @@ flowchart TD
     style C fill:#FFB6C1,stroke:#AA0000,stroke-width:2px
     style D1 fill:#E0E0E0,stroke:#888
     style D2 fill:#E0FFE0,stroke:#888
+
 ```
 
 ## 5. 总结与对比
