@@ -104,11 +104,11 @@ graph TD
 
 ```mermaid
 flowchart TD
-    A[Reference Audios - Audio1, Audio2, Audio3] --> B1[Content Encoder - z]
+    A[Reference Audios - Audio 1 2 3] --> B1[Content Encoder - z]
     A --> B2[Speaker Encoder - s]
-    B1 --> C[vCLUB Estimator - minimize I(z,s)]
+    B1 --> C[vCLUB Estimator - MI Reduction]
     B2 --> C
-    C --> D1[Before: z and s overlap]
+    C --> D1[Before: z and s overlapped]
     C --> D2[After: z and s separated]
 
     style A fill:#BFDFFF,stroke:#333
@@ -117,7 +117,6 @@ flowchart TD
     style C fill:#FFB6C1,stroke:#AA0000
     style D1 fill:#F0F0F0,stroke:#666
     style D2 fill:#D0FFD0,stroke:#666
-
 
 ```
 
