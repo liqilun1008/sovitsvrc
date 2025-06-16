@@ -102,7 +102,7 @@ graph TD
 ---
 
 
-
+```mermaid
 flowchart TD
     A[Reference Audios<br/>(Audio 1, 2, 3)] --> B1[Content Encoder<br/>(z)]
     A --> B2[Speaker Encoder<br/>(s)]
@@ -117,7 +117,7 @@ flowchart TD
     style C fill:#FFB6C1,stroke:#AA0000,stroke-width:2px
     style D1 fill:#E0E0E0,stroke:#888
     style D2 fill:#E0FFE0,stroke:#888
-
+```
 
 ## 5. 总结与对比
 
