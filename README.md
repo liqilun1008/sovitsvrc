@@ -101,6 +101,24 @@ graph TD
 
 ---
 
+
+
+flowchart TD
+    A[Reference Audios<br/>(Audio 1, 2, 3)] --> B1[Content Encoder<br/>(z)]
+    A --> B2[Speaker Encoder<br/>(s)]
+    B1 --> C[vCLUB Estimator<br/>✂ Minimize I(z, s)]
+    B2 --> C
+    C --> D1[Before: z ≈ s<br/>(Overlapping)]
+    C --> D2[After: z ⊥ s<br/>(Disentangled)]
+
+    style A fill:#BFDFFF,stroke:#333,stroke-width:1px
+    style B1 fill:#FFE4B5,stroke:#333
+    style B2 fill:#FFDAB9,stroke:#333
+    style C fill:#FFB6C1,stroke:#AA0000,stroke-width:2px
+    style D1 fill:#E0E0E0,stroke:#888
+    style D2 fill:#E0FFE0,stroke:#888
+
+
 ## 5. 总结与对比
 
 | 特性 | PM | RMVPE |
