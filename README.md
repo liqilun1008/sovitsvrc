@@ -104,7 +104,7 @@ graph TD
 
 ```mermaid
 flowchart TD
-    A[Reference Audios<br/>(Audio 1, 2, 3)] --> B1[Content Encoder<br/>(z)]
+    A[Reference Audios(Audio 1, 2, 3)] --> B1[Content Encoder(z)]
     A --> B2[Speaker Encoder<br/>(s)]
     B1 --> C[vCLUB Estimator<br/>✂ Minimize I(z, s)]
     B2 --> C
